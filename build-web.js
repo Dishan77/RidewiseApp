@@ -11,9 +11,9 @@ if (!fs.existsSync(path.resolve(__dirname, 'dist'))) {
 }
 
 try {
-  // Run the Expo web export
+  // Run the Expo web export with static output
   console.log('Running Expo web export...');
-  execSync('npx expo export --platform web', { stdio: 'inherit' });
+  execSync('npx expo export --platform web --output-dir dist', { stdio: 'inherit' });
   console.log('Expo web export completed successfully');
 } catch (error) {
   console.error('Expo web export failed, but continuing with deployment...');
