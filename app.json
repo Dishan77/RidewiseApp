@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "RideWise",
+    "slug": "ridewise",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/webicon.png",
+    "scheme": "ridewise",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ridewise.app",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/webfavicon.png"
+    },
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
