@@ -1,0 +1,64 @@
+{
+  "apiRoutes": [],
+  "htmlRoutes": [
+    {
+      "file": "./(app)/index.tsx",
+      "page": "/(app)/index",
+      "namedRegex": "^(?:/\\(app\\))?(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./index.tsx",
+      "page": "/index",
+      "namedRegex": "^/(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(auth)/login.tsx",
+      "page": "/(auth)/login",
+      "namedRegex": "^(?:/\\(auth\\))?/login(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(auth)/splash.tsx",
+      "page": "/(auth)/splash",
+      "namedRegex": "^(?:/\\(auth\\))?/splash(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(auth)/signup.tsx",
+      "page": "/(auth)/signup",
+      "namedRegex": "^(?:/\\(auth\\))?/signup(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(app)/compare.tsx",
+      "page": "/(app)/compare",
+      "namedRegex": "^(?:/\\(app\\))?/compare(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(app)/settings.tsx",
+      "page": "/(app)/settings",
+      "namedRegex": "^(?:/\\(app\\))?/settings(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "expo-router/build/views/Sitemap.js",
+      "page": "/_sitemap",
+      "namedRegex": "^/_sitemap(?:/)?$",
+      "routeKeys": {},
+      "generated": true
+    }
+  ],
+  "notFoundRoutes": [
+    {
+      "file": "./+not-found.tsx",
+      "page": "/+not-found",
+      "namedRegex": "^(?:/(?<notfound>.+?))?(?:/)?$",
+      "routeKeys": {
+        "notfound": "not-found"
+      }
+    }
+  ]
+}

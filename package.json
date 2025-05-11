@@ -5,11 +5,10 @@
   "private": true,
   "scripts": {
     "dev": "EXPO_NO_TELEMETRY=1 expo start",
-    "build:web": "npx expo export:web || true",
+    "build:web": "node build-web.js",
     "lint": "expo lint"
   },
-
-    "resolutions": {
+  "resolutions": {
     "jimp-compact": "0.16.1"
   },
   "dependencies": {
