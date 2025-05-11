@@ -5,11 +5,22 @@
   "private": true,
   "scripts": {
     "dev": "EXPO_NO_TELEMETRY=1 expo start",
-    "build:web": "node build-web.js",
+    "prebuild": "node fix-images.js",
+    "build:web": "npm run prebuild && npx cross-env NODE_OPTIONS=--max_old_space_size=4096 expo export:web",
+    "serve": "npx serve dist",
     "lint": "expo lint"
   },
   "resolutions": {
-    "jimp-compact": "0.16.1"
+    "jimp-compact": "0.16.1",
+    "jimp": "0.16.1",
+    "@jimp/custom": "0.16.1",
+    "@jimp/core": "0.16.1",
+    "@jimp/plugin-resize": "0.16.1",
+    "@jimp/utils": "0.16.1"
+  },
+  "overrides": {
+    "jimp-compact": "0.16.1",
+    "jimp": "0.16.1"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
