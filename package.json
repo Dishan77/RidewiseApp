@@ -6,10 +6,7 @@
   "scripts": {
     "dev": "EXPO_NO_TELEMETRY=1 expo start",
     "prebuild": "node fix-images.js",
-    "build:web": "node fix-images.js && expo export:web",
-    "postbuild": "cp -R web-build/* dist/ 2>/dev/null || true",
-    "build": "npm run build:web && npm run postbuild",
-    "serve": "npx serve dist",
+    "build": "expo export:web",
     "lint": "expo lint"
   },
   "resolutions": {

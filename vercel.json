@@ -1,14 +1,6 @@
 {
-  "buildCommand": "./vercel-build.sh",
-  "outputDirectory": "dist",
+  "buildCommand": "npx expo export:web",
+  "outputDirectory": "web-build",
   "framework": "create-react-app",
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "Access-Control-Allow-Credentials", "value": "true" },
-        { "key": "Access-Control-Allow-Origin", "value": "*" }
-      ]
-    }
-  ]
+  "devCommand": "npx expo start --web"
 }
