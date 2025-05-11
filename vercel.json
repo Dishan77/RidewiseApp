@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "buildCommand": "node direct-build.js",
+  "outputDirectory": "dist",
+  "framework": null,
+  "installCommand": "npm install"
+}
